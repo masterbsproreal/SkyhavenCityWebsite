@@ -5,17 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skyhaven City</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>🌆 Skyhaven City</h1>
+    <div class="container">
 
-    <p>Deine Stadt. Dein Abenteuer.</p>
+        <h1>🌆 Skyhaven City</h1>
+        <p>Deine Stadt. Dein Abenteuer.</p>
 
-    <button>🎁 2500 Gems GRATIS</button>
+        <div class="box">
+
+            <h2>💎 2500 Gems GRATIS</h2>
+
+            <input type="text" id="mcname" placeholder="Minecraft Name eingeben">
+
+            <button onclick="claim()">🎁 Bonus erhalten</button>
+
+            <p id="msg"></p>
+
+        </div>
+
+        <div class="info">
+            <p>🟢 Server Online</p>
+            <p>👥 Discord</p>
+            <p>🛒 Shop</p>
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
 
