@@ -1,8 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const discordButton = document.querySelector(".discord-button");
-  if (discordButton) {
-    discordButton.setAttribute("aria-label", "Skyhaven City Discord beitreten");
-  }
+  const serverButtons = document.querySelectorAll(".discord-button[data-server-address]");
+  serverButtons.forEach((serverButton) => {
+    serverButton.addEventListener("click", async () => {
+      const serverAddress = serverButton.dataset.serverAddress;
+
+      try {
+        await navigator.clipboard.writeText(serverAddress);
+      } catch {
+        const addressInput = document.createElement("input");
+        addressInput.value = serverAddress;
+        document.body.appendChild(addressInput);
+        addressInput.select();
+        document.execCommand("copy");
+        addressInput.remove();
+      }
+
+      const originalText = serverButton.textContent;
+      serverButton.textContent = "Adresse kopiert";
+      window.setTimeout(() => {
+        serverButton.textContent = originalText;
+      }, 1600);
+    });
+  });
 
   const claimForm = document.querySelector("#claimForm");
   const claimStatus = document.querySelector("#claimStatus");

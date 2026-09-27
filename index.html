@@ -6,7 +6,7 @@
     <title>Skyhaven City | Minecraft Citybuild</title>
     <meta
       name="description"
-      content="Skyhaven City ist eine moderne Minecraft-Citybuild-Community mit Events, Shop und exklusiven Starter-Boni."
+      content="Skyhaven City ist eine moderne Minecraft-Citybuild-Community mit Events, exklusiven Geld-Boni."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,8 +79,8 @@
 
           <div class="panel-card mini-card">
             <span class="mini-label">Aktuelle UPDs</span>
-            <strong>Nichts steht bevor</strong>
-            <small>bald aber vielleicht :D</small>
+            <strong>Bedrock Spieler erhalten auch den Website-Bonus!</strong>
+            <small>In Kürze verfügbar</small>
           </div>
         </div>
       </section>
@@ -127,7 +127,7 @@
             <p>Ein freundliches Umfeld mit Teams, Hilfe und gemeinsamen Projekten.</p>
           </article>
           <article class="feature-card">
-            <div class="icon">�</div>
+            <div class="icon">🎭</div>
             <h3>Community Events</h3>
             <p>Veranstaltungen, Wettbewerbe und gemeinsame Projekte für alle Mitglieder.</p>
           </article>
@@ -146,27 +146,27 @@
 
           <div class="bonus-form">
             <p class="discord-label">Java</p>
-            <a
+            <button
               class="discord-button"
-              href="https://skyhavencity.minekeep.gg"
-              target="_blank"
-              rel="noopener noreferrer"
+              type="button"
+              data-server-address="skyhavencity.minekeep.gg"
+              aria-label="Java Server-Adresse kopieren"
             >
               skyhavencity.minekeep.gg
-            </a>
+            </button>
 
             <p class="discord-label" style="margin-top: 20px;">Bedrock</p>
-            <a
+            <button
               class="discord-button"
-              href="https://skyhavencity.bedrock.minekeep.gg"
-              target="_blank"
-              rel="noopener noreferrer"
+              type="button"
+              data-server-address="skyhavencity.bedrock.minekeep.gg"
+              aria-label="Bedrock Server-Adresse kopieren"
             >
               skyhavencity.bedrock.minekeep.gg
-            </a>
+            </button>
 
             <div class="claim-wrapper">
-              <p class="discord-label" style="margin-top: 20px;">Starter-Bonus</p>
+              <p class="discord-label" style="margin-top: 20px;">Website-Besucher-Bonus</p>
               <form id="claimForm" class="claim-form" novalidate>
                 <label class="sr-only" for="playerName">Minecraft-Name</label>
                 <input
@@ -178,10 +178,10 @@
                   autocomplete="off"
                   required
                 />
-                <button id="claimBtn" type="submit">50000 Eco holen</button>
+                <button id="claimBtn" type="submit">50000 $ holen</button>
               </form>
               <p id="claimStatus" class="claim-status" aria-live="polite">
-                Gib deinen Ingame-Namen ein und erhalte 50.000 Eco.
+                Gib deinen Ingame-Namen ein und erhalte 50.000 $.
               </p>
             </div>
           </div>
