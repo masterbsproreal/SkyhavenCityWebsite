@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
 
       const playerName = playerNameInput.value.trim();
-      const validName = /^[A-Za-z0-9_]{3,16}$/.test(playerName);
+      const validName = /^(?:[A-Za-z0-9_]{3,16}|\.[A-Za-z0-9_]{2,15})$/.test(playerName);
 
       if (!validName) {
         claimStatus.textContent = "Bitte gib einen gültigen Minecraft-Namen ein.";
